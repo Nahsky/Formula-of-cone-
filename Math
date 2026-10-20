@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() 
+{  const float PI = 3.142;
+  float  Radius = 0;
+  float Height = 0;
+   float volume = 0;
+   
+  cout<< "Enter The Radius:";
+  cin>> Radius;
+
+  cout<< "Enter The Height:";
+      cin>>Height;
+
+ volume= (1.0/3.0) * PI * pow(Radius,2) * Height;
+  cout<< "The volume of a cone is "<<volume<< endl;
+
+  return 0;
+}                      
+   
