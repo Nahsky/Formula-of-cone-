@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() 
+{
+    int number = 0;
+    int power = 0;
+    int Total=0;
+    
+    cout<< "Enter The Number : ";
+    cin>>number;
+
+    cout<<"Enter The Power : ";
+    cin>>power;
+
+    Total= pow(number,power);
+        cout<< "The total is "<<Total<<endl;
+
+    return 0;
+}
+   
+    
