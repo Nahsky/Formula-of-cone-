@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main ()
+{
+    const float Discount = 0.3;
+    float Total,  DiscountPrice;
+    int Price;
+
+    cout<< "Enter The Price: ";
+    cin>> Price;
+
+    DiscountPrice = Price*Discount;
+    Total = Price- DiscountPrice;
+    cout<<"\nThe Total You Need To Pay Is "<<Total<<" Ringgit"<<endl;
+
+    return 0;
+}
