@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char name[1000];
+    const double EPF = 11.0/100.0;
+    int allowance ,hourrate, Gsalary;
+    double  Epfdeduction, Nsalary;
+
+    cout<< "Enter Full Name : ";
+    cin.getline (name,1000);
+
+        cout<<"Enter Your Hour Work For The Month : ";
+    cin>>hourrate;
+    cout<<"Amount Of Allowance Company Provide : ";
+    cin>> allowance;
+
+    Gsalary = hourrate*45.00+allowance;
+    Epfdeduction = Gsalary*EPF;
+    Nsalary = Gsalary-Epfdeduction;
+
+    cout<<"\n**********MONTHLY PAYSlIP*************";
+    cout<<"\nEmployee Name : "<<name;
+    cout<<"\nHours Worked : "<<hourrate;
+    cout<<"\nAllowance : RM" <<allowance;
+    cout<<"\nGross Salary : RM" <<Gsalary;
+    cout<<"\nEPF Deduction : RM" <<Epfdeduction;
+    cout<<"\nNet Salary : RM" <<Nsalary;
+    cout<<"\n**********THANK YOU*************"<<endl;
+    
+   
+    return 0;
+}
