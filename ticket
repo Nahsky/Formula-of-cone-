@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   char name[10000];
+    int adult1, child1, seniorcitizen1, totalall, totaladult,totalchild, totalseniorcitizen ;
+    const int adult = 25.00;
+    const int child = 18.00;
+    const int seniorcitizen = 12.00;
+    const double tax = 0.06;
+    double totalt, money, balance, totalat;
+    
+
+    cout<<"Enter Your Name : ";
+    cin.getline(name,10000);
+    
+    cout<<"Enter Adult Ticket :";
+    cin>> adult1;
+    cout<<"Enter Child Ticket :";
+    cin>> child1;
+    cout<<"Enter Senior Citizen Ticket :";
+    cin>> seniorcitizen1;
+
+    totaladult = adult1*adult;
+    totalchild = child1*child;
+    totalseniorcitizen = seniorcitizen1*seniorcitizen;
+
+    totalall = totaladult+totalchild+totalseniorcitizen;
+    totalt = totalall*tax ;
+    totalat = totalall + totalt;
+
+    cout<<"Enter Amount : ";
+    cin>> money;
+    balance = money-totalat;
+
+     cout<<"\n**********RECEIPT*************";
+    cout<<"\nCustomer Name : " <<name;
+    cout<<"\nNo Adult Ticket : " <<adult1;
+    cout<<"\nNo Child Ticket : " <<child1;
+    cout<<"\nNo Senior Citizen Ticket : " <<seniorcitizen1;
+    cout<<"\nCharge For";
+    cout<<"\nAdult = RM"<< totaladult;
+    cout<<"\nChild = RM"<< totalchild;
+    cout<<"\nSenior Citizen = RM"<< totalseniorcitizen;
+    cout<<"\nTotal amount = RM"<< totalall;
+    cout<<"\nTax = RM"<< totalt;
+    cout<<"\nTotal Amount (After Tax) = RM"<< totalat;
+    cout<<"\nMoney Received = RM "<<money;
+    cout<<"\nMoney Returned = RM "<<balance;
+    cout<<"\n**********THANK YOU*************"<<endl;
+    
+
+    return 0;
+}
